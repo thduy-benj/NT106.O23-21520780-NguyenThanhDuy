@@ -65,19 +65,21 @@
             btnDoc.TabIndex = 11;
             btnDoc.Text = "Đọc";
             btnDoc.UseVisualStyleBackColor = true;
+            btnDoc.Click += btnDoc_Click;
             // 
             // tbKetQua
             // 
-            tbKetQua.Location = new Point(59, 160);
+            tbKetQua.Location = new Point(12, 251);
+            tbKetQua.Multiline = true;
             tbKetQua.Name = "tbKetQua";
             tbKetQua.ReadOnly = true;
-            tbKetQua.Size = new Size(317, 27);
+            tbKetQua.Size = new Size(776, 27);
             tbKetQua.TabIndex = 10;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(56, 125);
+            label2.Location = new Point(9, 216);
             label2.Name = "label2";
             label2.Size = new Size(60, 20);
             label2.TabIndex = 9;
