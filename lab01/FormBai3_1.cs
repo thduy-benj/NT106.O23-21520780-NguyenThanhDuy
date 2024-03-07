@@ -64,20 +64,36 @@ namespace lab01
                 string ketqua = "";
                 if (num < 0) { ketqua += "Âm "; num *= -1; }
                 if (num == 0) { ketqua = "Không"; }
-                if (num > 100000000000)
+                if (num > 1000000000)
                 {
-                    ketqua = basecase(num / 1000000000, ketqua) + " Tỷ ";
+                    ketqua = basecase(num / 1000000000, ketqua) + "Tỷ ";
                     num %= 1000000000;
                 }
                 if (num >= 1000000)
                 {
-                    ketqua = basecase(num / 1000000, ketqua) + " Triệu ";
+                    if (num / 1000000 < 1000)
+                    {
+                        ketqua += "Không Trăm ";
+                    }
+                    if (num / 1000000 < 10)
+                    {
+                        ketqua += "Linh ";
+                    }
+                    ketqua = basecase(num / 1000000, ketqua) + "Triệu ";
                     num %= 1000000;
                 }
                 if (num >= 1000)
                 {
-                    ketqua = basecase(num / 1000, ketqua) + " Nghìn ";
-                    num %= 1000;
+                    if (num / 1000 < 1000)
+                    {
+                        ketqua += "Không Trăm ";
+                    }
+                    if (num / 1000 < 10)
+                    {
+                        ketqua += "Linh ";
+                    }
+                    ketqua = basecase(num / 1000, ketqua) + "Nghìn ";
+                    
                 }
                 if (num > 0)
                 {
@@ -126,20 +142,20 @@ namespace lab01
             switch (num % 10)
             {
                 case 1:
-                    if ((num / 10) % 10 > 1) ketqua += "Mốt";
-                    else ketqua += "Một";
+                    if ((num / 10) % 10 > 1) ketqua += "Mốt ";
+                    else ketqua += "Một ";
                     break;
-                case 2: ketqua += "Hai"; break;
-                case 3: ketqua += "Ba"; break;
-                case 4: ketqua += "Bốn"; break;
+                case 2: ketqua += "Hai "; break;
+                case 3: ketqua += "Ba "; break;
+                case 4: ketqua += "Bốn "; break;
                 case 5:
-                    if ((num / 10) % 10 > 0) ketqua += "Lăm";
-                    else ketqua += "Năm";
+                    if ((num / 10) % 10 > 0) ketqua += "Lăm ";
+                    else ketqua += "Năm ";
                     break;
-                case 6: ketqua += "Sáu"; break;
-                case 7: ketqua += "Bảy"; break;
-                case 8: ketqua += "Tám"; break;
-                case 9: ketqua += "Chín"; break;
+                case 6: ketqua += "Sáu "; break;
+                case 7: ketqua += "Bảy "; break;
+                case 8: ketqua += "Tám "; break;
+                case 9: ketqua += "Chín "; break;
             }
             return ketqua;
         }
