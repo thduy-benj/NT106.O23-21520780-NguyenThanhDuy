@@ -18,3 +18,8 @@ D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.formBai1.resourc
 D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.FormBai2.resources
 D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.FormBai3.resources
 D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.FormBai3_1.resources
+D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.FormBai4.resources
+D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.FormBai5.resources
+D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.FormBai6.resources
+D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.FormBai7.resources
+D:\Benjamin_stuff\C#\LAB01\lab01\obj\Debug\net6.0-windows\lab01.FormBai8.resources

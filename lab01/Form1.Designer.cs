@@ -77,6 +77,7 @@
             btnBai4.TabIndex = 3;
             btnBai4.Text = "Bài 4";
             btnBai4.UseVisualStyleBackColor = true;
+            btnBai4.Click += btnBai4_Click;
             // 
             // btnBai5
             // 
@@ -86,6 +87,7 @@
             btnBai5.TabIndex = 4;
             btnBai5.Text = "Bài 5";
             btnBai5.UseVisualStyleBackColor = true;
+            btnBai5.Click += btnBai5_Click;
             // 
             // btnBai6
             // 
@@ -95,6 +97,7 @@
             btnBai6.TabIndex = 5;
             btnBai6.Text = "Bài 6";
             btnBai6.UseVisualStyleBackColor = true;
+            btnBai6.Click += btnBai6_Click;
             // 
             // btnBai7
             // 
@@ -104,6 +107,7 @@
             btnBai7.TabIndex = 6;
             btnBai7.Text = "Bài 7";
             btnBai7.UseVisualStyleBackColor = true;
+            btnBai7.Click += btnBai7_Click;
             // 
             // btnBai8
             // 
@@ -113,6 +117,7 @@
             btnBai8.TabIndex = 7;
             btnBai8.Text = "Bài 8";
             btnBai8.UseVisualStyleBackColor = true;
+            btnBai8.Click += btnBai8_Click;
             // 
             // btnBai3_1
             // 

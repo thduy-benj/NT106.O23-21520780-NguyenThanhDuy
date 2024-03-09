@@ -16,5 +16,20 @@
     <Compile Update="FormBai3_1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormBai4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBai5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBai6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBai7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBai8.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
