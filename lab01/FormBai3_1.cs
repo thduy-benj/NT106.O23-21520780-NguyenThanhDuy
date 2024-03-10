@@ -63,37 +63,53 @@ namespace lab01
             {
                 string ketqua = "";
                 if (num < 0) { ketqua += "Âm "; num *= -1; }
-                if (num == 0) { ketqua = "Không"; }
+                if (num == 0) 
+                {
+                    ketqua = "Không";
+                    return;
+                }
+                bool flag10e9 = false, flag10e6 = false;
                 if (num > 1000000000)
                 {
+                    flag10e9 = true;
                     ketqua = basecase(num / 1000000000, ketqua) + "Tỷ ";
                     num %= 1000000000;
                 }
+
                 if (num >= 1000000)
                 {
-                    if (num / 1000000 < 1000)
+                    if (flag10e9)
                     {
-                        ketqua += "Không Trăm ";
+                        if (num / 1000000 < 100)
+                        {
+                            ketqua += "Không Trăm ";
+                        }
+
+                        if (num / 1000000 < 10)
+                        {
+                            ketqua += "Linh ";
+                        }
                     }
-                    if (num / 1000000 < 10)
-                    {
-                        ketqua += "Linh ";
-                    }
+                    flag10e6 = true;
                     ketqua = basecase(num / 1000000, ketqua) + "Triệu ";
+                    
                     num %= 1000000;
                 }
                 if (num >= 1000)
                 {
-                    if (num / 1000 < 1000)
+                    if (flag10e6)
                     {
-                        ketqua += "Không Trăm ";
+                        if (num / 1000 < 100)
+                        {
+                            ketqua += "Không Trăm ";
+                        }
+
+                        if (num / 1000 < 10)
+                        {
+                            ketqua += "Linh ";
+                        }
                     }
-                    if (num / 1000 < 10)
-                    {
-                        ketqua += "Linh ";
-                    }
-                    ketqua = basecase(num / 1000, ketqua) + "Nghìn ";
-                    
+                    ketqua = basecase(num/1000, ketqua) + "Nghìn ";
                 }
                 if (num > 0)
                 {
