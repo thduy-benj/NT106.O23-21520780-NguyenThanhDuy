@@ -20,6 +20,29 @@ namespace lab01
         Dictionary<string, double> choNgoi = new Dictionary<string, double>();
         double heso = 0;
         int demVeVot = 0, demVeThuong = 0, demVeVIP = 0;
+        private void FormBai4_Load(object sender, EventArgs e)
+        {
+            dsPhim.Add("Đào, Phở và Piano", 45000);
+            dsPhim.Add("Mai", 100000);
+            dsPhim.Add("Gặp lại chị bầu", 70000);
+            dsPhim.Add("Tarot", 90000);
+
+            choNgoi.Add("A1", 0.25);
+            choNgoi.Add("A5", 0.25);
+            choNgoi.Add("C1", 0.25);
+            choNgoi.Add("C5", 0.25);
+
+            choNgoi.Add("A2", 1);
+            choNgoi.Add("A3", 1);
+            choNgoi.Add("A4", 1);
+            choNgoi.Add("C2", 1);
+            choNgoi.Add("C3", 1);
+            choNgoi.Add("C4", 1);
+
+            choNgoi.Add("B2", 2);
+            choNgoi.Add("B3", 2);
+            choNgoi.Add("B4", 2);
+        }
         private void btnDatVe_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbTenKH.Text))
@@ -134,28 +157,6 @@ namespace lab01
             }
         }
 
-        private void FormBai4_Load(object sender, EventArgs e)
-        {
-            dsPhim.Add("Đào, Phở và Piano", 45000);
-            dsPhim.Add("Mai", 100000);
-            dsPhim.Add("Gặp lại chị bầu", 70000);
-            dsPhim.Add("Tarot", 90000);
 
-            choNgoi.Add("A1", 0.25);
-            choNgoi.Add("A5", 0.25);
-            choNgoi.Add("C1", 0.25);
-            choNgoi.Add("C5", 0.25);
-
-            choNgoi.Add("A2", 1);
-            choNgoi.Add("A3", 1);
-            choNgoi.Add("A4", 1);
-            choNgoi.Add("C2", 1);
-            choNgoi.Add("C3", 1);
-            choNgoi.Add("C4", 1);
-
-            choNgoi.Add("B2", 2);
-            choNgoi.Add("B3", 2);
-            choNgoi.Add("B4", 2);
-        }
     }
 }

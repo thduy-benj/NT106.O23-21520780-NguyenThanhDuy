@@ -97,7 +97,7 @@ namespace lab01
                 }
                 if (num >= 1000)
                 {
-                    if (flag10e6)
+                    if (flag10e6 || flag10e9)
                     {
                         if (num / 1000 < 100)
                         {
