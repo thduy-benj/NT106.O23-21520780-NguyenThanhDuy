@@ -30,7 +30,8 @@
         {
             btnDoc = new Button();
             btnGhi = new Button();
-            rTBKetQua = new RichTextBox();
+            rTBInput = new RichTextBox();
+            rTBOutput = new RichTextBox();
             SuspendLayout();
             // 
             // btnDoc
@@ -51,21 +52,31 @@
             btnGhi.TabIndex = 1;
             btnGhi.Text = "Tính và Ghi";
             btnGhi.UseVisualStyleBackColor = true;
+            btnGhi.Click += btnGhi_Click;
             // 
-            // rTBKetQua
+            // rTBInput
             // 
-            rTBKetQua.Location = new Point(55, 106);
-            rTBKetQua.Name = "rTBKetQua";
-            rTBKetQua.Size = new Size(287, 175);
-            rTBKetQua.TabIndex = 2;
-            rTBKetQua.Text = "";
+            rTBInput.Location = new Point(55, 106);
+            rTBInput.Name = "rTBInput";
+            rTBInput.Size = new Size(287, 175);
+            rTBInput.TabIndex = 2;
+            rTBInput.Text = "";
+            // 
+            // rTBOutput
+            // 
+            rTBOutput.Location = new Point(401, 106);
+            rTBOutput.Name = "rTBOutput";
+            rTBOutput.Size = new Size(298, 175);
+            rTBOutput.TabIndex = 3;
+            rTBOutput.Text = "";
             // 
             // FormBai3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(rTBKetQua);
+            Controls.Add(rTBOutput);
+            Controls.Add(rTBInput);
             Controls.Add(btnGhi);
             Controls.Add(btnDoc);
             Name = "FormBai3";
@@ -77,6 +88,7 @@
 
         private Button btnDoc;
         private Button btnGhi;
-        private RichTextBox rTBKetQua;
+        private RichTextBox rTBInput;
+        private RichTextBox rTBOutput;
     }
 }

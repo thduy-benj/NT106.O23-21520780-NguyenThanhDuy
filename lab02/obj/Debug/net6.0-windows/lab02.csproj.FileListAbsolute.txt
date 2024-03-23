@@ -6,7 +6,6 @@ D:\Benjamin_stuff\C#\LAB01\lab02\bin\Debug\net6.0-windows\lab02.pdb
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.Form1.resources
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.FormBai1.resources
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.FormBai2.resources
-D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.FormBai3.resources
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.FormBai4.resources
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.FormBai5.resources
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.FormBai6.resources
@@ -21,3 +20,4 @@ D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\refint\lab02.dll
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.pdb
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.genruntimeconfig.cache
 D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\ref\lab02.dll
+D:\Benjamin_stuff\C#\LAB01\lab02\obj\Debug\net6.0-windows\lab02.FormBai3.resources
