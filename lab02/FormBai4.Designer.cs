@@ -104,6 +104,7 @@
             btnBack.TabIndex = 3;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // btnNext
             // 
@@ -113,6 +114,7 @@
             btnNext.TabIndex = 4;
             btnNext.Text = "Next";
             btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
             // 
             // label2
             // 

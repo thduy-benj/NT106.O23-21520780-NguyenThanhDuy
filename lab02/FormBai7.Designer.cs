@@ -28,18 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            tvPath = new TreeView();
+            gbFileContent = new GroupBox();
             SuspendLayout();
+            // 
+            // tvPath
+            // 
+            tvPath.Location = new Point(12, 12);
+            tvPath.Name = "tvPath";
+            tvPath.Size = new Size(226, 561);
+            tvPath.TabIndex = 0;
+            tvPath.NodeMouseDoubleClick += tvPath_NodeMouseDoubleClick;
+            // 
+            // gbFileContent
+            // 
+            gbFileContent.Location = new Point(276, 12);
+            gbFileContent.Name = "gbFileContent";
+            gbFileContent.Size = new Size(902, 561);
+            gbFileContent.TabIndex = 1;
+            gbFileContent.TabStop = false;
+            gbFileContent.Text = "File content";
             // 
             // FormBai7
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1190, 585);
+            Controls.Add(gbFileContent);
+            Controls.Add(tvPath);
             Name = "FormBai7";
             Text = "Bài 7";
+            Load += FormBai7_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private TreeView tvPath;
+        private GroupBox gbFileContent;
     }
 }

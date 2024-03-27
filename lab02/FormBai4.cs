@@ -101,7 +101,7 @@ namespace lab02
             sinhvien.diemMon1 = mon1;
             sinhvien.diemMon2 = mon2;
             sinhvien.diemMon3 = mon3;
-            
+
             tbInputDTB.Text = sinhvien.diemTB().ToString();
             dsSinhVien.Add(sinhvien);
             rTBKetQua.Clear();
@@ -142,7 +142,6 @@ namespace lab02
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = saveFileDialog.FileName + ".json";
-                //BinaryFormatter binaryFormatter = new BinaryFormatter();
                 SerializeToFileJson(filePath, dsSinhVien);
             }
         }
@@ -181,21 +180,40 @@ namespace lab02
         int page = 0;
         private void btnRead_Click(object sender, EventArgs e)
         {
-            
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                page = 1;
-                lbSTT.Text = page.ToString();
+                lbSTT.Text = (page + 1).ToString();
                 string filePath = openFileDialog.FileName;
-                MessageBox.Show(filePath);
-                List<SinhVien> dsSinhVien1 = DeserializeFromFileJson(filePath);
-                if (dsSinhVien1 == null || dsSinhVien1.Count == 0)
+                dsSinhVien = DeserializeFromFileJson(filePath);
+                if (dsSinhVien == null || dsSinhVien.Count == 0)
                 {
                     MessageBox.Show("Danh sách rỗng");
                 }
-                MessageBox.Show(dsSinhVien1[0].ToString());
+                showSinhVien(dsSinhVien[0]);
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (page > 0)
+            {
+                page--;
+                lbSTT.Text = (page+1).ToString();
+                showSinhVien(dsSinhVien[(int)page]);
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (page < dsSinhVien.Count - 1)
+            {
+                page++;
+                lbSTT.Text = (page+1).ToString();
+                showSinhVien(dsSinhVien[((int)page)]);
+            }
+            
         }
     }
 }
