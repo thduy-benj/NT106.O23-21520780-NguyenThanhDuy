@@ -1,20 +1,20 @@
 Tên phim: Đào, phở và piano
-Số lượng vé bán ra: 8
-Số lượng vé tồn: 92
-Tỷ lệ vé bán ra: 8%
-Doanh thu: 427500
+Số lượng vé bán ra: 2
+Số lượng vé tồn: 98
+Tỷ lệ vé bán ra: 2%
+Doanh thu: 90000
 ----------------------------------------------------------------------------------
 Tên phim: Mai
-Số lượng vé bán ra: 6
-Số lượng vé tồn: 94
-Tỷ lệ vé bán ra: 6%
-Doanh thu: 525000
+Số lượng vé bán ra: 9
+Số lượng vé tồn: 91
+Tỷ lệ vé bán ra: 9%
+Doanh thu: 1200000
 ----------------------------------------------------------------------------------
 Tên phim: Gặp lại chị bầu
-Số lượng vé bán ra: 0
-Số lượng vé tồn: 100
-Tỷ lệ vé bán ra: 0%
-Doanh thu: 0
+Số lượng vé bán ra: 3
+Số lượng vé tồn: 97
+Tỷ lệ vé bán ra: 3%
+Doanh thu: 280000
 ----------------------------------------------------------------------------------
 Tên phim: Tarot
 Số lượng vé bán ra: 0
@@ -24,8 +24,7 @@ Doanh thu: 0
 ----------------------------------------------------------------------------------
 
 -------------Top doanh thu-------------------
-Mai: 525000
-Đào, phở và piano: 427500
-Gặp lại chị bầu: 0
+Mai: 1200000
+Gặp lại chị bầu: 280000
+Đào, phở và piano: 90000
 Tarot: 0
-: 540000

@@ -182,6 +182,7 @@ namespace lab02
         {
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Json files (*.json)|*.json|Text files (*.txt)|*.txt";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 lbSTT.Text = (page + 1).ToString();
@@ -190,6 +191,7 @@ namespace lab02
                 if (dsSinhVien == null || dsSinhVien.Count == 0)
                 {
                     MessageBox.Show("Danh sách rỗng");
+                    return;
                 }
                 showSinhVien(dsSinhVien[0]);
             }

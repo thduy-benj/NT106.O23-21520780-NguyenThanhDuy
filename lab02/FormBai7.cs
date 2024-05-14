@@ -63,7 +63,11 @@ namespace lab02
             if (node != null)
             {
                 string filePath = node.Text;
-                if (Path.GetExtension(filePath).ToLower() == ".jpg" || Path.GetExtension(filePath).ToLower() == ".jpeg" || Path.GetExtension(filePath).ToLower() == ".png" || Path.GetExtension(filePath).ToLower() == ".bmp" || Path.GetExtension(filePath).ToLower() == ".gif")
+                if (Path.GetExtension(filePath).ToLower() == ".jpg" 
+                    || Path.GetExtension(filePath).ToLower() == ".jpeg" 
+                    || Path.GetExtension(filePath).ToLower() == ".png" 
+                    || Path.GetExtension(filePath).ToLower() == ".bmp" 
+                    || Path.GetExtension(filePath).ToLower() == ".gif")
                 {
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Image = Image.FromFile(filePath);
