@@ -1,6 +1,6 @@
 ﻿namespace lab03
 {
-    partial class FormBai_6
+    partial class FormBai_6_Server
     {
         /// <summary>
         /// Required designer variable.
@@ -28,45 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnServer = new Button();
-            btnClient = new Button();
+            lbLog = new ListBox();
+            btnListen = new Button();
             SuspendLayout();
             // 
-            // btnServer
+            // lbLog
             // 
-            btnServer.Location = new Point(90, 60);
-            btnServer.Name = "btnServer";
-            btnServer.Size = new Size(94, 29);
-            btnServer.TabIndex = 0;
-            btnServer.Text = "Server";
-            btnServer.UseVisualStyleBackColor = true;
-            btnServer.Click += btnServer_Click;
+            lbLog.FormattingEnabled = true;
+            lbLog.ItemHeight = 20;
+            lbLog.Location = new Point(12, 12);
+            lbLog.Name = "lbLog";
+            lbLog.Size = new Size(443, 424);
+            lbLog.TabIndex = 0;
             // 
-            // btnClient
+            // btnListen
             // 
-            btnClient.Location = new Point(90, 114);
-            btnClient.Name = "btnClient";
-            btnClient.Size = new Size(94, 29);
-            btnClient.TabIndex = 1;
-            btnClient.Text = "Client";
-            btnClient.UseVisualStyleBackColor = true;
-            btnClient.Click += btnClient_Click;
+            btnListen.Location = new Point(588, 12);
+            btnListen.Name = "btnListen";
+            btnListen.Size = new Size(94, 29);
+            btnListen.TabIndex = 1;
+            btnListen.Text = "Listen";
+            btnListen.UseVisualStyleBackColor = true;
+            btnListen.Click += btnListen_Click;
             // 
-            // FormBai_6
+            // FormBai_6_Server
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(297, 226);
-            Controls.Add(btnClient);
-            Controls.Add(btnServer);
-            Name = "FormBai_6";
-            Text = "FormBai_6";
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnListen);
+            Controls.Add(lbLog);
+            Name = "FormBai_6_Server";
+            Text = "FormBai_6_Server";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btnServer;
-        private Button btnClient;
+        private ListBox lbLog;
+        private Button btnListen;
     }
 }

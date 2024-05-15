@@ -40,5 +40,11 @@
     <Compile Update="FormBai_6.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormBai_6_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBai_6_Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

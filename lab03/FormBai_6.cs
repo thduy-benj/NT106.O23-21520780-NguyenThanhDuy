@@ -16,5 +16,17 @@ namespace lab03
         {
             InitializeComponent();
         }
+
+        private void btnServer_Click(object sender, EventArgs e)
+        {
+            FormBai_6_Server server = new FormBai_6_Server();
+            server.Show();
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            FormBai_6_Client client = new FormBai_6_Client();
+            client.Show();
+        }
     }
 }

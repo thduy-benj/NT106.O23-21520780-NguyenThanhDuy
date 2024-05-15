@@ -26,3 +26,5 @@ D:\Benjamin_stuff\C#\LAB01\lab03\obj\Debug\net6.0-windows\lab03.FormBai_3_Client
 D:\Benjamin_stuff\C#\LAB01\lab03\obj\Debug\net6.0-windows\lab03.FormBai_3_Server.resources
 D:\Benjamin_stuff\C#\LAB01\lab03\obj\Debug\net6.0-windows\lab03.FormBai_4_Client.resources
 D:\Benjamin_stuff\C#\LAB01\lab03\obj\Debug\net6.0-windows\lab03.FormBai_4_Server.resources
+D:\Benjamin_stuff\C#\LAB01\lab03\obj\Debug\net6.0-windows\lab03.FormBai_6_Client.resources
+D:\Benjamin_stuff\C#\LAB01\lab03\obj\Debug\net6.0-windows\lab03.FormBai_6_Server.resources
