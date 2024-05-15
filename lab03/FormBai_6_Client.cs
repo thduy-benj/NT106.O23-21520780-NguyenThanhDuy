@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Net.Sockets;
+﻿using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-using System.Web;
-using System.Windows.Forms;
 
 namespace lab03
 {
@@ -53,7 +41,6 @@ namespace lab03
         private TcpClient tcpClient;
         private NetworkStream stream;
         private List<string> ClientsName = new List<string>();
-        private Dictionary<string, bool> clientList = new Dictionary<string, bool>();
         private async void btnConnect_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbUsrName.Text))

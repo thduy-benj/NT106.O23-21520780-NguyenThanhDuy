@@ -44,13 +44,5 @@ namespace lab03
             }
             if (this.clienttcp != null) this.clienttcp.Close();
         }
-        public async Task<string> ReceiveMessageAsync()
-        {
-            byte[] responseBuffer = new byte[clienttcp.ReceiveBufferSize];
-            int bytesRead = await stream.ReadAsync(responseBuffer, 0, responseBuffer.Length);
-            string response = Encoding.UTF8.GetString(responseBuffer, 0, bytesRead);
-
-            return response;
-        }
     }
 }

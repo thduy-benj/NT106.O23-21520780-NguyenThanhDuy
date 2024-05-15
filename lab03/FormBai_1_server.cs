@@ -11,10 +11,6 @@ namespace lab03
             InitializeComponent();
         }
 
-        public void ShowMessage(string s)
-        {
-            lbMessage.Items.Add(s);
-        }
         public void serverThread()
         {
             int port;
@@ -27,7 +23,7 @@ namespace lab03
                     Byte[] receiveByte = udpClient.Receive(ref ipe);
                     string returnData = Encoding.UTF8.GetString(receiveByte);
                     string mess = ipe.Address.ToString() + ": " + returnData.ToString();
-                    ShowMessage(mess);
+                    lbMessage.Items.Add(mess);
                 }
 
             }
